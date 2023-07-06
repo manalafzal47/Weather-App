@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8"/>
+        <meta name="description" content="Weather App made with HTML, CSS, and Javascript—mainpage">
+        <meta name="authors" content="Manal Afzal and Ruth Geng">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- MAIN INFORMATION OF THE APP (might need to change to section class instead of header) -->
+        <header class="header">
+            <div class="header-left">
+                <p>C°/F°</p>
+                <div class="header-current city">
+                    <h1>PHEONIX</h1>
+                </div>
+                <div class="header-current-temp">
+                    <span data-current-temp>22</span>&deg;
+                </div>
+                <div class="header-current-weather">
+                    <span data-current-weather>Sunny</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <image class="weather-icon-large" src="icons/sun.svg" data-current-large-icon/>
+            </div>
+        </header>
+
+        <!-- INFO GROUP (CHANCE OF RAIN, PRESSURE AND WIND) -->
+        <section class="info-group" data-info-group>
+            <div class="info-group">
+                <image class="weather-icon-small" src="icons/raincloud.svg" data-current-icon/>
+                <div><span data-current-precip>15</span>&percnt;</div>
+            </div>
+            <div class="info-group">
+                <image class="weather-icon-small" src="icons/pressure.svg" data-current-icon/>
+                <div><span data-current-pressure>1006</span>hpa</div>
+            </div>
+            <div class="info-group">
+                <image class="weather-icon-small" src="icons/wind.svg" data-current-icon/>
+                <div><span data-current-wind>15</span>km/h</div>
+            </div>
+        </section>
+
+        <!-- SCROLL THROUGH WEATHER STUFF -->
+        <section cass="sunset-sunrise-section">
+            <div class="sunrise">
+                <p>SUNRISE</p>
+                <div><span data-current-sunrise>07:00</span>AM</div>
+            </div>
+            <div class="sunset">
+                <p>SUNSET</p>
+                <div><span data-current-sunset>06:00</span>PM</div>
+            </div>
+        </section>
+
+        <!-- TODAY'S TIMELINE OF THE WEATHER -->
+        <section class="day-section-top" data-day-section-top>
+            <p>TODAY</p>
+            <div class="day-card-top">
+                <div class="day-card-time">8 AM</div>
+                <img src="icons/cloudysun.svg" class="weather-icon"/>
+                <div>18&deg;</div>
+            </div>
+            <div class="day-card-top">
+                <div class="day-card-time">9 AM</div>
+                <img src="icons/sunny.svg" class="weather-icon"/>
+                <div>22&deg;</div>
+            </div>
+            <div class="day-card-top">
+                <div class="day-card-time">10 AM</div>
+                <img src="icons/cloudy.svg" class="weather-icon"/>
+                <div>21&deg;</div>
+            </div>
+            <div class="day-card-top">
+                <div class="day-card-time">11 AM</div>
+                <img src="icons/cloudysun.svg" class="weather-icon"/>
+                <div>22&deg;</div>
+            </div>
+            <div class="day-card-top">
+                <div class="day-card-time">12 PM</div>
+                <img src="icons/cloudysun.svg" class="weather-icon"/>
+                <div>22&deg;</div>
+            </div>
+        </section>
+
+        <!-- WEEKS TIMELINE OF THE WEATHER -->
+        <section class="day-section-bottom" data-day-section-bottom>
+            <div class="day-card-bottom">
+                <div class="day-card-date">TUESDAY</div>
+                <img src="icons/rain.svg" class="weather-icon"/>
+                <div>17&deg;</div>
+            </div>
+            <div class="day-card-bottom">
+                <div class="day-card-date">WEDNESDAY</div>
+                <img src="icons/cloudysun.svg" class="weather-icon"/>
+                <div>17&deg;</div>
+            </div>
+            <div class="day-card-bottom">
+                <div class="day-card-date">THURSDAY</div>
+                <img src="icons/sunny.svg" class="weather-icon"/>
+                <div>17&deg;</div>
+            </div>
+        </section>
+
+        <!-- SCROLL FOR MORE INFORMATION -->
+        <section class="scroll" data-scroll>
+            <div class="scroll">
+                <div class="scroll-sentence">SCROLL FOR MORE</div>
+                <img src="icons/arrows.svg" class="functional-icons"/>
+            </div>
+        </section>
+
+        <!-- TEMPLATE FOR OVERVIEW OF THE WEEKS WEATHER (TIMELINE SECTIONS) -->
+        <template id="day-card-template">
+            <div class="day-card-top">
+                <div class="day-card-time" data-time></div>
+                <img data-icon class="weather-icon"/>
+                <div><span data-temp></span><span>&deg;</span></div>
+            </div>
+        </template>
+
+        <template id="day-card-bottom">
+            <div class="day-card-bottom">
+                <div class="day-card-date" data-date></div>
+                <img data-icon class="weather-icon"/>
+                <div><span data-temp></span><span>&deg;</span></div>
+            </div>
+        </template>
+
+    </body>
+</html> 
