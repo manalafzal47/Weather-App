@@ -2,11 +2,8 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css">
-        
-        <!-- FONTS USED IN CSS -->
-        <link href="https://fonts.cdnfonts.com/css/josefin-sans" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
-        <meta charset ="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />       
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />        
         <meta name="description" content="Weather App made with HTML, CSS, and Javascript—mainpage">
         <meta name="authors" content="Manal Afzal and Ruth Geng">
         <meta http-equiv="refresh" content="30">
@@ -16,7 +13,7 @@
 
     <!-- NAVIGATION BANNER-->
     <nav>
-        <a href="additional.html">Check Out</a>
+        <a href="additional.html">Countries</a>
         <a href="overview.html">Indexes</a>
         <!--<a href="loading.html">Loading</a>
         <a href="search.html">Search</a>-->
@@ -67,10 +64,10 @@
                 <div><span data-current-sunset>06:00</span>PM</div>
             </div>
         </section>
-
+        <div class = "weather-box">
         <!-- TODAY'S TIMELINE OF THE WEATHER -->
+        <div class = "day-section-title"><p>TODAY</p></div>
         <section class="day-section-top" data-day-section-top>
-            <p>TODAY</p>
             <div class="day-card-top">
                 <div class="day-card-time">8 AM</div>
                 <img src="icons/cloudysun.svg" class="weather-icon"/>
@@ -124,7 +121,7 @@
                 <img src="icons/arrows.svg" class="functional-icons"/>
             </div>
         </section>
-
+    </div>
         <!-- TEMPLATE FOR OVERVIEW OF THE WEEKS WEATHER (TIMELINE SECTIONS) -->
         <template id="day-card-template">
             <div class="day-card-top">
