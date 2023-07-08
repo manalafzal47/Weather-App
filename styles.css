@@ -11,9 +11,10 @@ body {
 }
 
 .header-current-city {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Amatic SC';
 }
+
 .header-current-temp {
     font-size:40px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', 'sans-serif';
 }
