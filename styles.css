@@ -3,3 +3,9 @@ body {
     background-color: #F1D2BB;
   }
 
+/* MAINPAGE */
+.header-right {
+    position: absolute;
+    top: 0px;
+    right: 0px;;
+}
