@@ -88,12 +88,93 @@ body {
 /* INDEXES */
 
 .air-quality-section {
-    width:300px;
-    padding:50px;
-    margin:20px;
+    width:250px;
+    padding:100px;
+    margin:15px;
+    border-radius: 50px;;
     background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
 }
 
 .air-quality {
-
+    font-family: 'Amatic Sc';
+    font-size: 30px;
 }
+
+.uv-index {
+    font-family: 'Amatic Sc';
+    font-size: 30px;
+}
+
+.uv-section {
+    width:250px;
+    padding:100px;
+    margin:15px;
+    border-radius: 50px;;
+    background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
+}
+
+.rainfall {
+    font-family: 'Amatic Sc';
+    font-size: 30px;
+}
+
+.rainfall-section {
+    width:250px;
+    padding:100px;
+    margin:15px;
+    border-radius: 50px;;
+    background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
+}
+
+.wind-time {
+    font-family: 'Amatic Sc';
+    font-size: 30px;
+}
+
+.wind-section {
+    width:250px;
+    padding:100px;
+    margin:15px;
+    border-radius: 50px;;
+    background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
+}
+
+.humidity {
+    font-family: 'Amatic Sc';
+    font-size: 30px;
+}
+
+.humidity-section {
+    width:250px;
+    padding:100px;
+    margin:15px;
+    border-radius: 50px;;
+    background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
+}
+
+.feels-like {
+    font-family: 'Amatic Sc';
+    font-size: 30px;
+}
+
+.feels-like-section {
+    width:250px;
+    padding:100px;
+    margin:15px;
+    border-radius: 50px;;
+    background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
+}
+
+.sunrise-time {
+    font-family: 'Amatic Sc';
+    font-size: 30px;
+}
+
+.sunrise-section {
+    width:250px;
+    padding:100px;
+    margin:15px;
+    border-radius: 50px;;
+    background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
+}
+
