@@ -92,32 +92,16 @@ body {
     text-align:center;
 }
 
-.box-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-.box-2 {
+.city {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
-}
+    height: 100%;
+    margin-top: -80px; 
+    padding: 10px;
 
-.box-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.box-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .city-card {
