@@ -94,6 +94,9 @@ body {
 
 
 .city {
+    font-family: 'Amatic Sc';
+    font-size:50px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -104,21 +107,46 @@ body {
 
 }
 
-.city-card {
+.city-card-1 {
     width:200px;
     padding:90px;
     height:45px;
     margin:15px;
     border-radius: 50px;;
-    background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
     color:white;
+    background-color:#374A67;
 }
 
-.city {
-    font-family: 'Amatic Sc';
-    font-size:50px;
-    text-align: center;
+.city-card-2 {
+    width:200px;
+    padding:90px;
+    height:45px;
+    margin:15px;
+    border-radius: 50px;;
+    color:white;
+    background-color:#29524A;
 }
+
+.city-card-3 {
+    width:200px;
+    padding:90px;
+    height:45px;
+    margin:15px;
+    border-radius: 50px;;
+    color:white;
+    background-color:#616283;
+}
+
+.city-card-4 {
+    width:200px;
+    padding:90px;
+    height:45px;
+    margin:15px;
+    border-radius: 50px;;
+    color:white;
+    background-color:#64699C;
+}
+
 
 .weather-icon {
     width:75px;
