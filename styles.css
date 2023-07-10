@@ -145,16 +145,29 @@ body {
     background-color:#64699C;
 }
 
-
 .weather-icon {
     width:75px;
     align-content: center;
 }
 
-.city-card-week, .city-card-date, .city-card-time, .city-card-degree {
+.city-card-week, .city-card-date, .city-card-time {
     font-family: 'Josefin Sans';
     font-size:15px;
-    text-align: center;
+}
+
+.city-card-degree {
+    font-family: 'Josefin Sans';
+    font-size:15px;
+}
+
+.column-1 {
+    float:left;
+    width:50%;
+}
+
+.column-2 {
+    float:right;
+    width:50%;
 }
 
 /* INDEXES */
@@ -270,5 +283,56 @@ body {
 
 /*  SEARCH */
 
+.city {
+    font-family: 'Amatic Sc';
+    font-size:25px;
+}
 
-/* LOADING */
+.city-card-1 {
+    width:200px;
+    padding:90px;
+    height:45px;
+    margin:15px;
+    border-radius: 50px;;
+    color:white;
+    background-color:#374A67;
+} 
+
+.city-card-2 {
+    width:200px;
+    padding:90px;
+    height:45px;
+    margin:15px;
+    border-radius: 50px;;
+    color:white;
+    background-color:#29524A;
+}
+
+.city-card-3 {
+    width:200px;
+    padding:90px;
+    height:45px;
+    margin:15px;
+    border-radius: 50px;;
+    color:white;
+    background-color:#616283;
+}
+
+.city-card-week, .city-card-date, .city-card-time {
+    font-family:'Josefin Sans';
+    font-size:15px;
+    display:flex-start;
+}
+
+.city-card-degree {
+    font-family:'Josefin Sans';
+    font-size:15px;
+    display:flex-end;
+}
+
+.weather-icon {
+    width:75px;
+    align-content: center;
+}
+
+/* LOADING */ 
