@@ -1,4 +1,4 @@
-/* GLOBAL STYLES*/
+ /* GLOBAL STYLES*/
 body {
     background-color: #F1D2BB;
   }
@@ -80,6 +80,69 @@ body {
 .weather-icon {
     display:inline-block;
 }
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones */
+    .header-current-city {
+        font-size: 30px;
+    }
+
+    .header-current-temp {
+        font-size: 30px;
+    }
+
+    .header-current-weather {
+        font-size: 20px;
+    }
+
+    .info-group {
+        align-content:center;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* For tablets */
+    .header-current-temp {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  
+    {    
+    /* For small screens laptops */
+    .header-current-temp {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px)  
+    {    
+    /* For desktops and large screens */
+    .header-current-city {
+        font-size: 50px;
+        text-align: center;
+    }
+
+
+    .header-current-temp {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .header-current-weather {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .header-right {
+        align-content:center;
+    }
+
+
+}
+
 
 /* COUNTRIES */
 
@@ -336,3 +399,20 @@ body {
 }
 
 /* LOADING */ 
+
+.loading-info {
+    font-family:'Amatic Sc';
+    font-size:40px;
+
+}
+
+.dot-typing {
+    font-family:'Amatic Sc';
+    font-size:20px;
+}
+
+.image-icon {
+    align-content:center;
+} 
+
+/* RESPONSIVE */
