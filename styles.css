@@ -22,7 +22,7 @@ body {
 
 .header-current-weather {
     font-family: 'Josefin Sans', ;
-    width: 80px;
+    width: 30%;
     height: 15px;
     flex-shrink: 0;
     border-radius: 9px;
@@ -39,7 +39,7 @@ body {
 }
 
 .weather-box {
-    width:300px;
+    width:100%;
     padding:50px;
     margin:20px;
     background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
@@ -102,7 +102,7 @@ body {
     }
   
     .weather-box {
-      width: 100%;
+      width: 80%;
       padding: 20px;
       margin: 10px;
     }
@@ -126,7 +126,7 @@ body {
     .day-card-bottom img {
         margin-right:10px;
     }
-    
+    }   
     /* For tablets */
     @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .header-current-city {
@@ -141,27 +141,78 @@ body {
       font-size: 30px;
     }
   
-    /* For small screens laptops */
-    @media only screen and (min-device-width: 1025px) and (max-device-width: 1366px) 
-    {
-    .header-current-city {
-      font-size: 100px;
+    .weather-box {
+        width: 90%;
+        padding: 20px;
+        margin: 10px;
+      }
+    
+    .day-section-top {
+        flex-wrap:wrap;
     }
   
-    .header-current-temp {
-      font-size: 100px;
-    }
-  
-    .header-current-weather {
-      font-size: 50px;
+    .day-card-top {
+        width:15%;
+        margin:10px;
     }
 
-    .weather-box {
-        width:700px;
-        padding:50px;
-        margin:20px;
-        background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);    
+    .day-card-bottom {
+        display:flex;
+        flex-wrap:wrap;
     }
+    .day-card-bottom div {
+        width:100%;
+    }
+    .day-card-bottom img {
+        margin-right:10px;
+    }
+
+    /* For small screens laptops */
+    
+    @media only screen and (min-device-width: 900px) and (max-device-height: 1200px) {
+        .header-current-city {
+          font-size: 30px;
+        }
+      
+        .header-current-temp {
+          font-size: 30px;
+        }
+      
+        .header-current-weather {
+          font-size: 20px;
+        }
+      
+        .weather-box {
+          width: 50%;
+          align-content:center;
+          padding: 50px;
+          margin: 20px;
+          background: linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
+        }
+      
+        .day-section-top {
+          flex-wrap: wrap;
+        }
+      
+        .day-card-top {
+          flex-basis: 15%;
+          margin: 10px;
+        }
+      
+        .day-section-bottom {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      
+        .day-card-bottom div {
+          width: 100%;
+        }
+      
+        .day-card-bottom img {
+          margin-right: 10px;
+        }
+      }
+    
 }
   
 /* COUNTRIES */
@@ -435,4 +486,3 @@ body {
     align-content:center;
 } 
 
-/* RESPONSIVE */
