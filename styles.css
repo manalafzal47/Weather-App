@@ -116,17 +116,11 @@ body {
         margin:10px;
     }
 
-    .day-card-bottom {
-        display:flex;
-        flex-wrap:wrap;
-    }
     .day-card-bottom div {
         width:100%;
     }
-    .day-card-bottom img {
-        margin-right:10px;
-    }
-    }   
+
+}   
 
     /* For tablets */
     @media only screen and (min-width: 601px) and (max-width: 1024px) {
