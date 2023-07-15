@@ -85,10 +85,11 @@ body {
 
 /* For mobile phones */
     @media only screen and (max-width: 600px) {
+    
     .header-current-city {
       font-size: 30px;
     }
-  
+
     .header-current-temp {
       font-size: 30px;
     }
@@ -120,16 +121,24 @@ body {
         width:100%;
     }
 
+    .info-group {
+        align-content: center;
+        size-adjust: 4px;
+        width:auto;
+      }
 }   
 
     /* For tablets */
     @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .header-current-city {
-      font-size: 40px;
+      font-size: 125.4px;
+      font-style: normal;
     }
   
     .header-current-temp {
-      font-size: 50px;
+        font-size: 150.48px;
+        font-weight: 300;
+
     }
   
     .header-current-weather {
@@ -163,6 +172,10 @@ body {
     .day-card-bottom img {
         margin-right:10px;
     }
+
+    .info-group {
+        align-content: center;
+      }
 
     /* For small screens laptops */
     
@@ -208,6 +221,11 @@ body {
     .day-card-bottom img {
         margin-right: 10px;
     }
+
+    .info-group {
+        align-content: center;
+      }
+  
 
 } 
 }
