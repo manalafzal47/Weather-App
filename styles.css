@@ -132,14 +132,14 @@ body {
 }   
 
     /* For tablets */
-    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    @media only screen and (min-width: 601px) and (min-height: 1024px) {
     .header-current-city {
-      font-size: 125.4px;
+      font-size: 70px;
       font-style: normal;
     }
   
     .header-current-temp {
-        font-size: 150.48px;
+        font-size: 70px;
         font-weight: 300;
 
     }
@@ -184,13 +184,13 @@ body {
 
     /* For small screens laptops */
     
-    @media only screen and (min-device-width: 769px) and (max-device-height: 1024px) {
+    @media only screen and (min-width: 1024px) and (min-height: 769px) {
     .header-current-city {
-        font-size: 50px;
+        font-size: 100px;
     }
     
     .header-current-temp {
-        font-size: 50px;
+        font-size: 100px;
     }
     
     .header-current-weather {
@@ -230,56 +230,6 @@ body {
     .info-group {
         align-content: center;
       }
-} 
-
-@media only screen and (min-device-width: 1025px) and (max-device-height: 1200px) {
-    .header-current-city {
-        font-size: 50px;
-    }
-    
-    .header-current-temp {
-        font-size: 50px;
-    }
-    
-    .header-current-weather {
-        font-size: 20px;
-    }
-    
-    .weather-box {
-        width: 70%;
-        padding: 20px;
-        margin: 10px;
-        border-radius:20px;
-  
-    }
-
-    .day-section-top {
-        flex-wrap: wrap;
-    }
-    
-    .day-card-top {
-        flex-basis: 15%;
-        margin: 10px;
-    }
-    
-    .day-section-bottom {
-        display: flex;
-        flex-wrap: wrap;
-    }
-      
-    .day-card-bottom div {
-        width: 100%;
-    }
-    
-    .day-card-bottom img {
-        margin-right: 10px;
-    }
-
-    .info-group {
-        align-content: center;
-      }
-  
-
 } 
 }
   
