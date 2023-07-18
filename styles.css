@@ -455,7 +455,9 @@
     margin-bottom:10px;
     align-items: center;
     display:flex;
-
+    top: 50px;
+    transform: translateX(-20%); 
+    left: 38%;
 }
 
 .uv-section {
@@ -501,6 +503,9 @@
     font-size: 30px;
     text-align:center;
     margin-bottom:10px;
+    top:1400px;  
+    transform: translateX(20%); 
+    left: 90%;
 }
 
 .humidity-section {
@@ -509,6 +514,7 @@
     padding:100px;
     border-radius: 50px;;
     background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
+
 }
 
 .feels-like {
@@ -516,6 +522,10 @@
     font-size: 30px;
     text-align:center;
     margin-bottom:10px;
+    position: absolute;
+    top:1850px;  
+    transform: translateX(-30%); 
+    left: 38%;
 }
 
 .feels-like-section {
@@ -531,6 +541,10 @@
     font-size: 30px;
     text-align:center;
     margin-bottom:10px;
+    position: absolute;
+    top: 1850px;  
+    transform: translateX(-20%);
+    left: 60%; 
 }
 
 .sunrise-section {
@@ -575,26 +589,9 @@
 
 }
 
-/* .air-quality
-{
-  order: 1; /* Make the title come first in the visual order 
-} 
-
-.air-quality-section {
-  order: 2; /* Make the section come second in the visual order 
-}
-
-.uv-index
-{
-  order: 1; /* Make the title come first in the visual order 
-} 
-
-.uv-section {
-  order: 2; /* Make the section come second in the visual order 
-} */
-
 /* RESPONSIVE */
 
+/* LAPTOPS */
 @media only screen and (min-width: 1025px) {
 
 .air-quality-section {
@@ -634,8 +631,10 @@
   margin:15px;
   border-radius: 50px;;
   background:linear-gradient(184deg, rgba(227, 187, 144, 0.78) 0%, rgba(230, 197, 162, 0.56) 100%);
-?}
 }
+}
+
+/* PHONES */
 
 
 /*  SEARCH */
