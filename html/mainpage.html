@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />       
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />        
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Weather App made with HTML, CSS, and Javascript—mainpage">
         <meta name="authors" content="Manal Afzal and Ruth Geng">
         <meta http-equiv="refresh" content="30">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC">
     </head>
-    <body>
+        <body class = "bg-orange-200">
 
     <!-- NAVIGATION BANNER-->
     <nav>
@@ -22,35 +22,35 @@
     
         <!-- MAIN INFORMATION OF THE APP (might need to change to section class instead of header) -->
         <header class="header">
-            <div class="header-left">
+            <div class="absolute top-0 right-0">
                 <p>C°/F°</p>
-                <div class="header-current-city">
+                <div class="text-xl">
                     <h1>PHEONIX</h1>
                 </div>
-                <div class="header-current-temp">
+                <div class="text-[40px]">
                     <span data-current-temp>22</span>&deg;
                 </div>
-                <div class="header-current-weather">
+                <div class="h-4 flex-shrink-0 text-center p-1">
                     <span data-current-weather>Sunny</span>
                 </div>
             </div>
-            <div class="header-right">
-                <image class="weather-icon-large" src="icons/sun.svg" data-current-large-icon/>
+            <div class="absolute top-0 right-0">
+                <img class="weather-icon-large" src="icons/sun.svg" data-current-large-icon/>
             </div>
         </header>
 
         <!-- INFO GROUP (CHANCE OF RAIN, PRESSURE AND WIND) -->
-        <section class="info-group" data-info-group>
-            <div class="info-group">
-                <image class="weather-icon-small" src="icons/raincloud.svg" data-current-icon/>
+        <section class="flex p-5 content-center" data-info-group>
+            <div class="flex p-5 content-center">
+                <img class="weather-icon-small" src="icons/raincloud.svg" data-current-icon/>
                 <div><span data-current-precip>15</span>&percnt;</div>
             </div>
-            <div class="info-group">
-                <image class="weather-icon-small" src="icons/pressure.svg" data-current-icon/>
+            <div class="flex p-5 content-center">
+                <img  class="weather-icon-small" src="icons/pressure.svg" data-current-icon/>
                 <div><span data-current-pressure>1006</span>hpa</div>
             </div>
-            <div class="info-group">
-                <image class="weather-icon-small" src="icons/wind.svg" data-current-icon/>
+            <div class="flex p-5 content-center">
+                <img class="weather-icon-small" src="icons/wind.svg" data-current-icon/>
                 <div><span data-current-wind>15</span>km/h</div>
             </div>
         </section>
@@ -67,51 +67,51 @@
             </div>
         </section>
 
-        <div class = "weather-box">
+        <div class = "w-full p-12 m-5">
         <!-- TODAY'S TIMELINE OF THE WEATHER -->
-        <div class = "day-section-title"><p>TODAY</p></div>
-        <section class="day-section-top" data-day-section-top>
-            <div class="day-card-top">
+        <div class = "text-center"><p>TODAY</p></div>
+        <section class="flex content-center p-2" data-day-section-top>
+            <div class="text-center">
                 <div class="day-card-time">8 AM</div>
-                <img src="icons/cloudysun.svg" class="weather-icon"/>
+                <img title = "cloudy-sun" src="icons/cloudysun.svg" class="weather-icon"/>
                 <div>18&deg;</div>
             </div>
-            <div class="day-card-top">
-                <div class="day-card-time">9 AM</div>
-                <img src="icons/sunny.svg" class="weather-icon"/>
+            <div class="indent-[10px] tracking-[1.5px] text-center">
+                <div class="grid">9 AM</div>
+                <img title = "sunny" src="icons/sunny.svg" class="weather-icon"/>
                 <div>22&deg;</div>
             </div>
-            <div class="day-card-top">
-                <div class="day-card-time">10 AM</div>
-                <img src="icons/cloudy.svg" class="weather-icon"/>
+            <div class="indent-[10px] tracking-[1.5px] text-center">
+                <div class="grid">10 AM</div>
+                <img title = "cloudy" src="icons/cloudy.svg" class="weather-icon"/>
                 <div>21&deg;</div>
             </div>
-            <div class="day-card-top">
-                <div class="day-card-time">11 AM</div>
-                <img src="icons/cloudysun.svg" class="weather-icon"/>
+            <div class="indent-[10px] tracking-[1.5px] text-center">
+                <div class="grid">11 AM</div>
+                <img title = "cloudy-sun" src="icons/cloudysun.svg" class="weather-icon"/>
                 <div>22&deg;</div>
             </div>
-            <div class="day-card-top">
-                <div class="day-card-time">12 PM</div>
-                <img src="icons/cloudysun.svg" class="weather-icon"/>
+            <div class="indent-[10px] tracking-[1.5px] text-center">
+                <div class="grid">12 PM</div>
+                <img title = "cloudy-sun" src="icons/cloudysun.svg" class="weather-icon"/>
                 <div>22&deg;</div>
             </div>
         </section>
 
         <!-- WEEKS TIMELINE OF THE WEATHER -->
-        <section class="day-section-bottom" data-day-section-bottom>
-            <div class="day-card-bottom">
-                <div class="day-card-date">TUESDAY</div>
+        <section class="items-end" data-day-section-bottom>
+            <div class="grid">
+                <div class="grid">TUESDAY</div>
                 <img src="icons/rain.svg" class="weather-icon"/>
                 <div>17&deg;</div>
             </div>
-            <div class="day-card-bottom">
-                <div class="day-card-date">WEDNESDAY</div>
+            <div class="items-end">
+                <div class="grid">WEDNESDAY</div>
                 <img src="icons/cloudysun.svg" class="weather-icon"/>
                 <div>17&deg;</div>
             </div>
-            <div class="day-card-bottom">
-                <div class="day-card-date">THURSDAY</div>
+            <div class="items-end">
+                <div class="grid">THURSDAY</div>
                 <img src="icons/sunny.svg" class="weather-icon"/>
                 <div>17&deg;</div>
             </div>
@@ -121,7 +121,7 @@
         <section class="scroll" data-scroll>
             <div class="scroll">
                 <div class="scroll-sentence">SCROLL FOR MORE</div>
-                <img src="icons/arrows.svg" class="functional-icons"/>
+                <img  src="icons/arrows.svg" class="functional-icons"/>
             </div>
         </section>
     </div>
